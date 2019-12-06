@@ -110,8 +110,8 @@
 #define LCD_PINS_D7         71
 
 //buttons are directly attached using AUX-2
-#define BTN_EN1                72
-#define BTN_EN2                14
+#define BTN_EN1                14
+#define BTN_EN2                72
 #define BTN_ENC                 9  // the click
 
 #define SDCARDDETECT           15
@@ -156,4 +156,3 @@
 	/* Put data into buffer, sends the data */ \
 	LOGIC_ANALYZER_SERIAL_TX_WRITE_NC(C); \
 } while (0)
-

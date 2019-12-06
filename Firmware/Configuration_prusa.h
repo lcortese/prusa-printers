@@ -19,7 +19,7 @@
 #define DEVELOPER
 
 // Printer name
-#define CUSTOM_MENDEL_NAME "PrusAppa 0.3.0"
+#define CUSTOM_MENDEL_NAME "PrusAppa 0.4.0"
 
 // Electronics
 #define MOTHERBOARD BOARD_EINSY_1_0a
