@@ -69,11 +69,11 @@
 #define MANUAL_Z_HOME_POS 0.2
 
 // Travel limits after homing
-#define X_MAX_POS 233
+#define X_MAX_POS 245
 #define X_MIN_POS 0
-#define Y_MAX_POS 215
-#define Y_MIN_POS 0 //orig -4
-#define Z_MAX_POS 200
+#define Y_MAX_POS 215.6
+#define Y_MIN_POS -2 //orig -4
+#define Z_MAX_POS 205
 #define Z_MIN_POS 0.15
 
 // Canceled home position
@@ -411,30 +411,30 @@
 #define MESH_BED_LEVELING
 #ifdef MESH_BED_LEVELING
 
-#define MBL_Z_STEP 0.01
+	#define MBL_Z_STEP 0.01
 
-// Mesh definitions
+	// Mesh definitions
 #define MESH_MIN_X 24
 #define MESH_MAX_X 228
-#define MESH_MIN_Y 6
-#define MESH_MAX_Y 210
+	#define MESH_MIN_Y 6
+	#define MESH_MAX_Y 210
 
-// Mesh upsample definition
-#define MESH_NUM_X_POINTS 7
-#define MESH_NUM_Y_POINTS 7
-// Mesh measure definition
-#define MESH_MEAS_NUM_X_POINTS 3
-#define MESH_MEAS_NUM_Y_POINTS 3
+	// Mesh upsample definition
+	#define MESH_NUM_X_POINTS 7
+	#define MESH_NUM_Y_POINTS 7
+	// Mesh measure definition
+	#define MESH_MEAS_NUM_X_POINTS 3
+	#define MESH_MEAS_NUM_Y_POINTS 3
 
-// Maximum bed level correction value
-#define BED_ADJUSTMENT_UM_MAX 100
+	// Maximum bed level correction value
+	#define BED_ADJUSTMENT_UM_MAX 100
 
-#define MESH_HOME_Z_CALIB 0.2
-#define MESH_HOME_Z_SEARCH 5.0f           // Z lift for homing, mesh bed leveling etc.
+	#define MESH_HOME_Z_CALIB 0.2
+	#define MESH_HOME_Z_SEARCH 5.0f           // Z lift for homing, mesh bed leveling etc.
 
-#define X_PROBE_OFFSET_FROM_EXTRUDER 23     // Z probe to nozzle X offset: -left  +right
-#define Y_PROBE_OFFSET_FROM_EXTRUDER 5     // Z probe to nozzle Y offset: -front +behind
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -0.4  // Z probe to nozzle Z offset: -below (always!)
+	#define X_PROBE_OFFSET_FROM_EXTRUDER 23     // Z probe to nozzle X offset: -left  +right
+	#define Y_PROBE_OFFSET_FROM_EXTRUDER 5     // Z probe to nozzle Y offset: -front +behind
+	#define Z_PROBE_OFFSET_FROM_EXTRUDER -0.4  // Z probe to nozzle Z offset: -below (always!)
 #endif
 
 // Bed Temperature Control
