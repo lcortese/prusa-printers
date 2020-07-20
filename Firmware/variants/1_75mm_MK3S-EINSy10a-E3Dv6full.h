@@ -271,8 +271,8 @@
 //new settings is possible for vsense = 1, running current value > 31 set vsense to zero and shift both currents by 1 bit right (Z axis only)
 #define TMC2130_CURRENTS_H {16, 20, 35, 30}  // default holding currents for all axes
 #define TMC2130_CURRENTS_R {16, 20, 35, 30}  // default running currents for all axes
-#define TMC2130_CURRENTS_R_HOME {8, 10, 20, 18}  // homing running currents for all axes
-// #define TMC2130_UNLOAD_CURRENT_R 12			 // lower current for M600 to protect filament sensor - Unused
+#define TMC2130_CURRENTS_R_HOME TMC2130_CURRENTS_H  // homing running currents for all axes
+// #define TMC2130_UNLOAD_CURRENT_R 12       // lower current for M600 to protect filament sensor - Unused
 
 #define TMC2130_STEALTH_Z
 
@@ -559,22 +559,22 @@
 // 110 is Pt100 with 1k pullup (non standard)
 
 #if defined(E3D_PT100_EXTRUDER_WITH_AMP)
-	#define TEMP_SENSOR_0 247
+  #define TEMP_SENSOR_0 247
 #elif defined(E3D_PT100_EXTRUDER_NO_AMP)
-	#define TEMP_SENSOR_0 148
+  #define TEMP_SENSOR_0 148
 #else
-	#define TEMP_SENSOR_0 5
+  #define TEMP_SENSOR_0 5
 #endif
 
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 
 #if defined(E3D_PT100_BED_WITH_AMP)
-	#define TEMP_SENSOR_BED 247
+  #define TEMP_SENSOR_BED 247
 #elif defined(E3D_PT100_BED_NO_AMP)
-	#define TEMP_SENSOR_BED 148
+  #define TEMP_SENSOR_BED 148
 #else
-	#define TEMP_SENSOR_BED 5
+  #define TEMP_SENSOR_BED 5
 #endif
 
 #define TEMP_SENSOR_PINDA 1
