@@ -175,18 +175,23 @@ const short temptable_5[][2] PROGMEM = {
 // ATC Semitec 104GT-2 (Used in ParCan)
 // Verified by linagee. Source: http://shop.arcol.hu/static/datasheets/thermistors.pdf
 // Calculated using 4.7kohm pullup, voltage divider math, and manufacturer provided temp/resistance
+
+   /*
+    * IMPORTANT NOTE:
+    * This table was modified to sync with the PrusAppa Bear Thermisor
+    */
    {1*OVERSAMPLENR, 713},
-   {17*OVERSAMPLENR, 300}, //top rating 300C
-   {20*OVERSAMPLENR, 290},
-   {23*OVERSAMPLENR, 280},
-   {27*OVERSAMPLENR, 270},
-   {31*OVERSAMPLENR, 260},
-   {37*OVERSAMPLENR, 250},
-   {43*OVERSAMPLENR, 240},
-   {51*OVERSAMPLENR, 230},
-   {61*OVERSAMPLENR, 220},
-   {73*OVERSAMPLENR, 210},
-   {87*OVERSAMPLENR, 200},
+   {17*OVERSAMPLENR, 500}, //top rating 300C
+   {20*OVERSAMPLENR, 370},
+   {23*OVERSAMPLENR, 345},
+   {27*OVERSAMPLENR, 324},
+   {31*OVERSAMPLENR, 300},
+   {37*OVERSAMPLENR, 275},
+   {43*OVERSAMPLENR, 260},
+   {51*OVERSAMPLENR, 252},
+   {61*OVERSAMPLENR, 240},
+   {73*OVERSAMPLENR, 222},
+   {87*OVERSAMPLENR, 210},
    {106*OVERSAMPLENR, 190},
    {128*OVERSAMPLENR, 180},
    {155*OVERSAMPLENR, 170},
